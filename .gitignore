@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Dependencies and build output (only if you ever add npm)
+node_modules/
+
+# Environment and secrets
+.env
+
+# Logs
+*.log
+
+# Raw/working files you don't want public
+*.psd
+*.ai
+*.fig
+*.mov
