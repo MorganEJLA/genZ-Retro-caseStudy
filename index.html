@@ -1,231 +1,287 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gen Z Retro — Case Study</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Caveat:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="charm-wallpaper"></div>
-    <div class="sky-strip"></div>
-    <nav class="pill-nav">
-      <a href="#top">Home</a>
-      <a href="#customizer">Customizer</a>
-      <a href="#artwork-management">Artwork</a>
-      <a href="#shop-states">Shop</a>
-      <a href="#purchase-vs-inquire">Purchase</a>
-    </nav>
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Gen Z Retro — Case Study</title>
+      <meta
+        name="description"
+        content="A custom WordPress theme for a fine artist, built so she can update colors, fonts, wallpaper and artwork herself after handoff."
+      />
 
-    <header class="hero" id="top">
-      <p class="eyebrow-pixel">CASE STUDY — WORDPRESS</p>
-      <h1 class="title">Gen Z Retro</h1>
-      <p class="subtitle">a site built to hand off and walk away from</p>
-      <span class="status-pill">IN DEVELOPMENT — PRE-LAUNCH</span>
-    </header>
+      <!-- Open Graph (Facebook, LinkedIn) -->
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Gen Z Retro: WordPress Case Study" />
+      <meta
+        property="og:description"
+        content="A custom WordPress theme for a fine artist, built so she can update colors, fonts, wallpaper and artwork herself after handoff."
+      />
+      <meta
+        property="og:url"
+        content="https://morganejla.github.io/genZ-Retro-caseStudy/"
+      />
+      <meta
+        property="og:image"
+        content="https://morganejla.github.io/genZ-Retro-caseStudy/img/og-image.png"
+      />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta
+        property="og:image:alt"
+        content="Gen Z Retro case study homepage with falling charm animation"
+      />
+      <meta name="twitter:card" content="summary_large_image" />
 
-    <main>
-      <div class="hero-shot">
-        <video
-          src="video/snow-angel-falling-charms-loop-navbar.mp4"
-          controls
-          playsinline
-          muted
-          loop
-        ></video>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Caveat:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+      <div class="charm-wallpaper"></div>
+      <div class="sky-strip"></div>
+      <nav class="pill-nav">
+        <a href="#top">Home</a>
+        <a href="#customizer">Customizer</a>
+        <a href="#artwork-management">Artwork</a>
+        <a href="#shop-states">Shop</a>
+        <a href="#purchase-vs-inquire">Purchase</a>
+      </nav>
+
+      <header class="hero" id="top">
+        <p class="eyebrow-pixel">CASE STUDY — WORDPRESS</p>
+        <h1 class="title">Gen Z Retro</h1>
+        <p class="subtitle">a site built to hand off and walk away from</p>
+        <span class="status-pill">IN DEVELOPMENT — PRE-LAUNCH</span>
+      </header>
+
+      <main>
+        <div class="hero-shot">
+          <video
+            src="video/snow-angel-falling-charms-loop-navbar.mp4"
+            controls
+            playsinline
+            muted
+            loop
+          ></video>
+        </div>
+
+        <section id="problem">
+          <h2>THE PROBLEM</h2>
+          <p>
+            The client is a fine artist who needed a portfolio and eventual shop
+            site. I wanted to give her the ability to update the site herself
+            after handoff. Most of what she will need to change is visual rather
+            than textual: new seasonal graphics, moods, color palettes.
+          </p>
+        </section>
+
+        <section id="design-direction">
+          <h2>DESIGN DIRECTION</h2>
+          <p>
+            The layout is built off the Web Design Museum's archive of
+            Sanrio.com circa 2000. The client initially wanted to emulate sites
+            from the early 2000s but the desktop-OS aesthetic is now everywhere
+            - draggable windows, taskbars, desktop icons. The Sanrio site
+            reference was a deliberate move away from that. The Web Design
+            Museum is a very extensive source of information so this pivot was
+            not difficult.
+          </p>
+          <p>
+            This case study page is using the same pixel and handwritten font
+            pairing system as well as the colors used in the overall design
+            system of the site in question.
+          </p>
+        </section>
+
+        <section id="customizer">
+          <h2>WHAT'S CUSTOMIZABLE WITHOUT TOUCHING CODE</h2>
+          <p>
+            When the client is an artist, one needs to understand that they have
+            moods, seasonal and creative eras that shift constantly. I started
+            by building the initial design around her current style, and used
+            PHP to move visual decisions to the Customizer, so she can make the
+            changes as she pleases.
+          </p>
+          <ul class="feature-list">
+            <li><b>Colors</b> — 5-color palette via color pickers</li>
+            <li>
+              <b>Typography</b> — a curated dropdown of 3 pre-paired fonts.
+            </li>
+            <li>
+              <b>Backgrounds</b> — page background color, plus header/footer
+              image uploads
+            </li>
+            <li>
+              <b>Wallpaper system</b> — Embossed / Outline / Off, backed by 6
+              uploadable charm images with fallback defaults
+            </li>
+            <li>
+              <b>Falling charm animation</b> — 10 uploadable charm images,
+              independent min/max size controls for desktop and mobile, driven
+              by actual viewport width
+            </li>
+            <li>
+              <b>Site content</b> — artist photo, sample artwork, and bio text,
+              all editable from the Customizer
+            </li>
+          </ul>
+          <div class="shot-grid">
+            <figure>
+              <button class="expand-btn" aria-label="Expand video">⤢</button>
+              <video
+                src="video/snow-angel-wallpaper-style.mp4"
+                controls
+                playsinline
+                muted
+                loop
+              ></video>
+              <figcaption>embossed vs. outline wallpaper style</figcaption>
+            </figure>
+            <figure>
+              <button class="expand-btn" aria-label="Expand video">⤢</button>
+              <video
+                src="video/falling-charms.mov"
+                controls
+                playsinline
+                muted
+                loop
+              ></video>
+              <figcaption>swapping to different charm sets</figcaption>
+            </figure>
+            <figure>
+              <button class="expand-btn" aria-label="Expand video">⤢</button>
+              <video
+                src="video/snow-angel-mobile-desktop-transition.mp4"
+                controls
+                playsinline
+                muted
+                loop
+              ></video>
+              <figcaption>desktop vs. mobile size controls</figcaption>
+            </figure>
+          </div>
+          <p style="margin-top: 24px">
+            The falling charm animation (<code>candy-fall.js</code>) isn't just
+            a visual flourish — it caps concurrent elements to prevent runaway
+            DOM growth, pauses spawning via the
+            <code>visibilitychange</code> event when the tab isn't active, and
+            includes a failsafe timeout in case the CSS
+            <code>animationend</code> event never fires.
+          </p>
+          <div class="tag-row">
+            <span class="tag">PHP</span>
+            <span class="tag">CUSTOMIZER API</span>
+            <span class="tag">VANILLA JS</span>
+          </div>
+        </section>
+
+        <section id="artwork-management">
+          <h2>ARTWORK MANAGEMENT</h2>
+          <p>
+            Artwork is a custom post type with ACF fields for medium,
+            description, "for sale" status, and price — so adding a new piece is
+            a standard WordPress editing flow, not a code change.
+          </p>
+          <div class="shot-grid">
+            <figure>
+              <video
+                src="video/snow-angel-mark-for-sale.mp4"
+                controls
+                playsinline
+                muted
+                loop
+              ></video>
+              <figcaption>editing a piece, then marking it for sale</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section id="shop-states">
+          <h2>SHOP: EMPTY VS. POPULATED STATE</h2>
+          <p>
+            The Shop page is conditional on whether any artwork has been marked
+            "for sale" in the admin. Flip that checkbox and add a price — no
+            code — and the page updates itself.
+          </p>
+          <div class="shot-grid">
+            <figure>
+              <video
+                src="video/snow-angel-unmark-for-sale.mp4"
+                controls
+                playsinline
+                muted
+                loop
+              ></video>
+              <figcaption>the shop, coming-soon state</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="purchase-vs-inquire">
+          <h2>PURCHASE VS. INQUIRE</h2>
+          <p>
+            Each artwork page shows two calls to action once a price is set:
+            <b>Purchase</b>, for buying the piece as shown, and <b>Inquire</b>,
+            for anything custom — a color variation, a size change, a different
+            palette. This mirrors how a working artist actually sells: not every
+            sale is "buy exactly what's on the screen."
+          </p>
+          <div class="shot-grid">
+            <figure>
+              <img
+                src="img/purchase-inquire.png"
+                alt="Single artwork page with Purchase and Inquire buttons"
+              />
+              <figcaption>purchase or inquire on a single piece</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="why-it-matters">
+          <h2>WHY THIS MATTERS</h2>
+          <p>
+            A client-facing WordPress build is only as good as what happens
+            <i>after</i> handoff. This project was an exercise in anticipating
+            every point where a non-technical client would otherwise need to
+            call the developer back — and turning it into a field she can just
+            fill in herself.
+          </p>
+        </section>
+        <!-- HOLD: uncomment once the SEO/accessibility audit checklist is actually complete -->
+        <!--
+<section id="seo-accessibility">
+  <h2>SEO &amp; ACCESSIBILITY</h2>
+  <p>A site built for handoff needs to be findable when the client wants it to be — and invisible when they don't. During development, the site stays deliberately unindexed; a single WordPress setting flips that at launch, with the flip itself built into the handoff checklist rather than left to memory.</p>
+  <ul class="feature-list">
+    <li><b>Indexing control</b> — "Discourage search engines" stays on through development, off only as the final launch step, so an unfinished site never gets crawled by accident</li>
+    <li><b>Structured SEO</b> — per-page titles and meta descriptions, auto-generated XML sitemap, one &lt;h1&gt; per page with logical heading nesting</li>
+    <li><b>Accessibility audit</b> — WCAG 2AA contrast checks via Pa11y, full keyboard navigation testing, descriptive alt text on every uploaded image (including Customizer-driven charm and background images)</li>
+    <li><b>Motion sensitivity</b> — a prefers-reduced-motion query scales back the falling-charm animation for users who need it</li>
+    <li><b>Performance baseline</b> — Lighthouse audits run locally before launch, catching issues while they're still cheap to fix</li>
+  </ul>
+  <div class="tag-row">
+    <span class="tag">SEO</span>
+    <span class="tag">WCAG 2AA</span>
+    <span class="tag">PA11Y</span>
+    <span class="tag">LIGHTHOUSE</span>
+  </div>
+</section>
+-->
+      </main>
+
+      <footer>made with care for a gen z artist ✿</footer>
+      <div class="video-lightbox" id="videoLightbox">
+        <div class="video-lightbox-inner">
+          <button class="lightbox-close" id="lightboxClose">✕</button>
+          <video id="lightboxVideo" controls playsinline autoplay></video>
+        </div>
       </div>
-
-      <section id="problem">
-        <h2>THE PROBLEM</h2>
-        <p>
-          The client is a fine artist who needed a portfolio and eventual shop
-          site. I wanted to give her the ability to update the site herself
-          after handoff. Most of what she will need to change is visual rather
-          than textual: new seasonal graphics, moods, color palettes.
-        </p>
-      </section>
-
-      <section id="design-direction">
-        <h2>DESIGN DIRECTION</h2>
-        <p>
-          The layout is built off the Web Design Museum's archive of Sanrio.com
-          circa 2000. The client initially wanted to emulate sites from the
-          early 2000s but the desktop-OS aesthetic is now everywhere - draggable
-          windows, taskbars, desktop icons. The Sanrio site reference was a
-          deliberate move away from that. The Web Design Museum is a very
-          extensive source of information so this pivot was not difficult.
-        </p>
-        <p>
-          This case study page is using the same pixel and handwritten font
-          pairing system as well as the colors used in the overall design system
-          of the site in question.
-        </p>
-      </section>
-
-      <section id="customizer">
-        <h2>WHAT'S CUSTOMIZABLE WITHOUT TOUCHING CODE</h2>
-        <p>
-          When the client is an artist, one needs to understand that they have
-          moods, seasonal and creative eras that shift constantly. I started by
-          building the initial design around her current style, and used PHP to
-          move visual decisions to the Customizer, so she can make the changes
-          as she pleases.
-        </p>
-        <ul class="feature-list">
-          <li><b>Colors</b> — 5-color palette via color pickers</li>
-          <li><b>Typography</b> — a curated dropdown of 3 pre-paired fonts.</li>
-          <li>
-            <b>Backgrounds</b> — page background color, plus header/footer image
-            uploads
-          </li>
-          <li>
-            <b>Wallpaper system</b> — Embossed / Outline / Off, backed by 6
-            uploadable charm images with fallback defaults
-          </li>
-          <li>
-            <b>Falling charm animation</b> — 10 uploadable charm images,
-            independent min/max size controls for desktop and mobile, driven by
-            actual viewport width
-          </li>
-          <li>
-            <b>Site content</b> — artist photo, sample artwork, and bio text,
-            all editable from the Customizer
-          </li>
-        </ul>
-        <div class="shot-grid">
-          <figure>
-            <button class="expand-btn" aria-label="Expand video">⤢</button>
-            <video
-              src="video/snow-angel-wallpaper-style.mp4"
-              controls
-              playsinline
-              muted
-              loop
-            ></video>
-            <figcaption>embossed vs. outline wallpaper style</figcaption>
-          </figure>
-          <figure>
-            <button class="expand-btn" aria-label="Expand video">⤢</button>
-            <video
-              src="video/falling-charms.mov"
-              controls
-              playsinline
-              muted
-              loop
-            ></video>
-            <figcaption>swapping to different charm sets</figcaption>
-          </figure>
-          <figure>
-            <button class="expand-btn" aria-label="Expand video">⤢</button>
-            <video
-              src="video/snow-angel-mobile-desktop-transition.mp4"
-              controls
-              playsinline
-              muted
-              loop
-            ></video>
-            <figcaption>desktop vs. mobile size controls</figcaption>
-          </figure>
-        </div>
-        <p style="margin-top: 24px">
-          The falling charm animation (<code>candy-fall.js</code>) isn't just a
-          visual flourish — it caps concurrent elements to prevent runaway DOM
-          growth, pauses spawning via the <code>visibilitychange</code> event
-          when the tab isn't active, and includes a failsafe timeout in case the
-          CSS <code>animationend</code> event never fires.
-        </p>
-        <div class="tag-row">
-          <span class="tag">PHP</span>
-          <span class="tag">CUSTOMIZER API</span>
-          <span class="tag">VANILLA JS</span>
-        </div>
-      </section>
-
-      <section id="artwork-management">
-        <h2>ARTWORK MANAGEMENT</h2>
-        <p>
-          Artwork is a custom post type with ACF fields for medium, description,
-          "for sale" status, and price — so adding a new piece is a standard
-          WordPress editing flow, not a code change.
-        </p>
-        <div class="shot-grid">
-          <figure>
-            <video
-              src="video/snow-angel-mark-for-sale.mp4"
-              controls
-              playsinline
-              muted
-              loop
-            ></video>
-            <figcaption>editing a piece, then marking it for sale</figcaption>
-          </figure>
-        </div>
-      </section>
-      <section id="shop-states">
-        <h2>SHOP: EMPTY VS. POPULATED STATE</h2>
-        <p>
-          The Shop page is conditional on whether any artwork has been marked
-          "for sale" in the admin. Flip that checkbox and add a price — no code
-          — and the page updates itself.
-        </p>
-        <div class="shot-grid">
-          <figure>
-            <video
-              src="video/snow-angel-unmark-for-sale.mp4"
-              controls
-              playsinline
-              muted
-              loop
-            ></video>
-            <figcaption>the shop, coming-soon state</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section id="purchase-vs-inquire">
-        <h2>PURCHASE VS. INQUIRE</h2>
-        <p>
-          Each artwork page shows two calls to action once a price is set:
-          <b>Purchase</b>, for buying the piece as shown, and <b>Inquire</b>,
-          for anything custom — a color variation, a size change, a different
-          palette. This mirrors how a working artist actually sells: not every
-          sale is "buy exactly what's on the screen."
-        </p>
-        <div class="shot-grid">
-          <figure>
-            <img
-              src="img/purchase-inquire.png"
-              alt="Single artwork page with Purchase and Inquire buttons"
-            />
-            <figcaption>purchase or inquire on a single piece</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section id="why-it-matters">
-        <h2>WHY THIS MATTERS</h2>
-        <p>
-          A client-facing WordPress build is only as good as what happens
-          <i>after</i> handoff. This project was an exercise in anticipating
-          every point where a non-technical client would otherwise need to call
-          the developer back — and turning it into a field she can just fill in
-          herself.
-        </p>
-      </section>
-    </main>
-
-    <footer>made with care for a gen z artist ✿</footer>
-    <div class="video-lightbox" id="videoLightbox">
-      <div class="video-lightbox-inner">
-        <button class="lightbox-close" id="lightboxClose">✕</button>
-        <video id="lightboxVideo" controls playsinline autoplay></video>
-      </div>
-    </div>
-    <script src="index.js"></script>
-  </body>
+      <script src="index.js"></script>
+    </body>
+  </html>
 </html>
